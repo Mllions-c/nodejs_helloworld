@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>用post发送注册信息给后台</title>
+</head>
+<body>
+<form name="userform" method="post" enctype="multipart/form-data"> <!--包含控件或其他内容时使用的格式-->
+用户名<input type="text" name="username">
+密码<input type="text" name="password" >
+    头像<input type="file" name="avatar" >
+<input type="button" value="注册" id="regBtn">
+</form>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        // 现注册监听
+        document.querySelector('#regBtn').addEventListener('click');
+        var username = document.querySelector("input[name='username']").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST','/reg2',true);
+        xhr.responseType = 'text';
+        xhr.setRequestHeader('content-Type','application/x-www-form-urlencoded');// 默认方式，编码所有字符
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && /2\d{2}/.test(xhr.status)){
+                var user = xhr.response
+                console.log(user)
+                else{
+                    alert('err')
+                }
+            }
+        };
+        var formData = new FormData();/*h5表单容器，可以异步的发送二进制文件*/
+        formData.append('username',document.querySelector("input[name='username']").value);
+        formData.append('password',document.querySelector("input[name='username']").value);
+        var avatar = document.querySelector("input[name='avatar']").value;
+        formData.append('avatar',avatar.files[0]);
+        xhr.send(formData);
+    };
+</script>
+</html>

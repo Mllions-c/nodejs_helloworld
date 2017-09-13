@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>readdir.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); font-style: italic; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,128); font-weight: bold; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+readdir.js</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">/** 
+ * Created by dingyl on 2017/2/26.miaov19 
+ */</span><span class="s1"> 
+</span><span class="s2">var </span><span class="s1">fs=require(</span><span class="s3">'fs'</span><span class="s1">) 
+fs.readdir(</span><span class="s3">'../js'</span><span class="s1">, </span><span class="s2">function</span><span class="s1">(err,fileList){ 
+    </span><span class="s0">/*console.log(fileList);*/</span><span class="s1"> 
+    fileList.forEach(</span><span class="s2">function</span><span class="s1">(f){ 
+       fs.stat(f, </span><span class="s2">function</span><span class="s1">(err,info){ 
+           </span><span class="s0">/*console.log(arguments);*/</span><span class="s1"> 
+           </span><span class="s2">switch </span><span class="s1">(info.mode){ 
+               </span><span class="s2">case </span><span class="s4">16822</span><span class="s1">: 
+                   console.log(</span><span class="s3">'[文件夹]'</span><span class="s1">+f); 
+                   </span><span class="s2">break</span><span class="s1">; 
+               </span><span class="s2">case </span><span class="s4">33206</span><span class="s1">: 
+                   console.log(</span><span class="s3">'[文件]'</span><span class="s1">+f); 
+                   </span><span class="s2">break</span><span class="s1">; 
+               </span><span class="s2">default</span><span class="s1">: 
+                   console.log(</span><span class="s3">'[其他类型]'</span><span class="s1">+f); 
+                   </span><span class="s2">break</span><span class="s1">; 
+           } 
+       }) 
+    }) 
+}) 
+</span></pre>
+</body>
+</html>

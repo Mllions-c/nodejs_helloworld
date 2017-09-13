@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>用post发送注册信息给后台</title>
+</head>
+<body>
+<form name="userform" method="post" enctype="multipart/form-data"> <!--包含控件或其他内容时使用的格式-->
+<input type="text" name="username">
+<input type="text" name="age" >
+<input type="button" value="注册" onclick="reg()">
+<table border="1">
+    <tbody>
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+    </tr>
+    </tbody>
+</table>
+</form>
+</body>
+<script type="text/javascript">
+    function reg (){
+        var age = document.querySelector("input[name='age']").value;
+        var username = document.querySelector("input[name='username']").value;
+        var user = {
+            username:username,
+            age:age
+        };
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST','/reg',true);
+        xhr.responseType = 'json';
+        xhr.setRequestHeader('content-Type','application/x-www-form-urlencoded');// 默认方式，编码所有字符
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                  var user = xhr.response
+                    var formData = new FormData();/*h5表单容器*/
+
+                    tbody = document.querySelector('table tbody');
+                    tr = document.createElement('tr');
+                    td1 = document.createElement('td');
+                    td2 = document.createElement('td');
+                    td1.innerHTML = user.username;
+                    td2.innerHTML = user.age;
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tbody.appendChild(tr)
+                }
+                else{
+                    alert('err')
+                }
+
+//                    status /status.Text
+            }
+        }
+        xhr.send(JSON.stringify(user));
+    }
+</script>
+</html>

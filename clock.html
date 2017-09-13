@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title></title>
+</head>
+<body>
+<h1><div style="color: red" id="div1"></div></h1>
+
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        setInterval(function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET','/clock',true)
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState==4){
+                    if(xhr.status==200){
+                        var oDiv = document.querySelector('#div1')
+                        oDiv.innerHTML = xhr.responseText;
+                    }
+                    else{
+                        var oDiv = document.querySelector('#div1')
+                        oDiv.innerHTML =xhr.statusText;
+                    }
+
+//                    status /status.Text
+                }
+            }
+            xhr.send();
+        },1000)
+    }
+</script>
+</html>

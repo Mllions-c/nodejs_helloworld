@@ -10,3 +10,4 @@ for(var i=0; i<=n; i++){
 }
 
 exports.sum= sum//暴露返回值，赋予到exports
+console.log('1')

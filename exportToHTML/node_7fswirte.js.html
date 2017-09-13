@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>node_7fswirte.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); font-style: italic; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,128); font-weight: bold; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+node_7fswirte.js</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">/** 
+ * Created by dingyl on 2017/3/10. 
+ */</span><span class="s1"> 
+</span><span class="s0">//fs操作</span><span class="s1"> 
+</span><span class="s2">var </span><span class="s1">fs = require(</span><span class="s3">'fs'</span><span class="s1">); 
+</span><span class="s0">//同步写入fs.writeSync(fd, buffer, offset, length[, position])</span><span class="s1"> 
+fs.writeFileSync(</span><span class="s3">'wirtes1.text'</span><span class="s1">,</span><span class="s3">'这里用的是同步写入的操作'</span><span class="s1">); 
+</span><span class="s0">//异步写入fs.writeFileSync(file, data, options)</span><span class="s1"> 
+</span><span class="s0">//a:追加 W：清空写入</span><span class="s1"> 
+fs.writeFile(</span><span class="s3">'wirte1.text'</span><span class="s1">,</span><span class="s3">'这里用的是异步写入的操作'</span><span class="s1">,{flag:</span><span class="s3">'w'</span><span class="s1">},</span><span class="s2">function</span><span class="s1">(){ 
+    </span><span class="s0">//console.log(arguments);//查看参数有几个</span><span class="s1"> 
+    </span><span class="s2">if</span><span class="s1">(err){ 
+        console.error(err); 
+    } 
+ 
+}) 
+</span><span class="s0">//文件添加内容，同flag：a的操作</span><span class="s1"> 
+fs.appendFile(</span><span class="s3">'1.text'</span><span class="s1">,</span><span class="s3">'这里是使用appendFile追加的'</span><span class="s1">) 
+</span></pre>
+</body>
+</html>

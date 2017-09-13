@@ -1,0 +1,26 @@
+  {
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "my first node",
+  "main": "argv.js",
+  "dependencies": {
+    "mime": "^1.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millionsstudy/my-first-Repository.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "millions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/millionsstudy/my-first-Repository/issues"
+  },
+  "homepage": "https://github.com/millionsstudy/my-first-Repository#readme"
+}

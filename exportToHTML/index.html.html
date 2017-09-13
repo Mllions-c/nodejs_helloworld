@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); }
+.s1 { color: rgb(0,0,128); font-weight: bold; }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(128,128,128); font-style: italic; }
+.s5 { color: rgb(0,0,255); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+index.html</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">&lt;!doctype html&gt; 
+&lt;</span><span class="s1">html</span><span class="s0">&gt; 
+&lt;</span><span class="s1">head</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">meta </span><span class="s0">charset=</span><span class="s2">&quot;utf-8&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">meta </span><span class="s0">name=</span><span class="s2">&quot;viewport&quot; </span><span class="s0">content=</span><span class="s2">&quot;width=device-width, initial-scale=1,maximum-scale=1, user-scale=no&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">title</span><span class="s0">&gt;响应式练习&lt;/</span><span class="s1">title</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">link </span><span class="s0">rel=</span><span class="s2">&quot;stylesheet&quot; </span><span class="s0">type=</span><span class="s2">&quot;text/css&quot; </span><span class="s0">href=</span><span class="s2">&quot;../css/bootstrap.min.css&quot;</span><span class="s0">&gt; 
+ 
+    &lt;</span><span class="s1">style </span><span class="s0">type=</span><span class="s2">&quot;text/css&quot;</span><span class="s0">&gt; 
+        .</span><span class="s1">text-width</span><span class="s0">{margin: </span><span class="s3">20</span><span class="s2">px </span><span class="s3">0</span><span class="s0">; width: </span><span class="s3">1000</span><span class="s2">px</span><span class="s0">; line-height: </span><span class="s3">30</span><span class="s2">px </span><span class="s0">} 
+        .</span><span class="s1">navbar</span><span class="s0">{ margin-bottom:</span><span class="s3">10</span><span class="s2">px</span><span class="s0">} 
+        </span><span class="s1">#myCarousel</span><span class="s0">{ margin:</span><span class="s3">0 </span><span class="s2">auto</span><span class="s0">;height:</span><span class="s3">360</span><span class="s2">px</span><span class="s0">; width:</span><span class="s3">1366</span><span class="s2">px</span><span class="s0">;} 
+        .</span><span class="s1">a</span><span class="s0">{min-height:</span><span class="s3">800</span><span class="s2">px</span><span class="s0">;border: </span><span class="s3">1</span><span class="s2">px solid </span><span class="s1">#ccc</span><span class="s0">; background: </span><span class="s1">#eee</span><span class="s0">} 
+        .</span><span class="s1">warp</span><span class="s0">{margin:</span><span class="s3">10</span><span class="s2">px auto </span><span class="s3">0 </span><span class="s2">auto</span><span class="s0">;width:</span><span class="s3">1366</span><span class="s2">px</span><span class="s0">; border:</span><span class="s3">10</span><span class="s2">px solid red</span><span class="s0">; height:</span><span class="s3">100</span><span class="s2">px</span><span class="s0">; 
+            background: </span><span class="s2">red</span><span class="s0">; } 
+ 
+ 
+ 
+ 
+ 
+        </span><span class="s4">/*@media (min-width: 1300px) and (max-width: 1549px ) { 
+          .container-xl{ 
+            width: 1280px; 
+          } 
+        } 
+        @media (min-width: 1050px) and (max-width: 1299px ) { 
+          .container-xl{ 
+            width: 1030px; 
+          } 
+        }*/</span><span class="s0"> 
+ 
+        </span><span class="s1">@media </span><span class="s2">screen </span><span class="s1">and </span><span class="s0">(max-width:</span><span class="s3">760</span><span class="s2">px</span><span class="s0">) { 
+            .</span><span class="s1">item active img</span><span class="s0">{ width:</span><span class="s3">95</span><span class="s0">%; height:</span><span class="s3">95</span><span class="s0">%} 
+            </span><span class="s1">#myCarousel</span><span class="s0">{width:</span><span class="s3">95</span><span class="s0">%; height:</span><span class="s3">95</span><span class="s0">%} 
+            .</span><span class="s1">wrap</span><span class="s0">{width:</span><span class="s3">95</span><span class="s0">%; height:</span><span class="s3">95</span><span class="s0">%} 
+            .</span><span class="s1">navbar</span><span class="s0">{ height:</span><span class="s3">10</span><span class="s2">px</span><span class="s0">; margin-bottom:</span><span class="s3">5</span><span class="s2">px</span><span class="s0">} 
+            .</span><span class="s1">carousel-indicators li</span><span class="s0">{ width:</span><span class="s3">5</span><span class="s2">px</span><span class="s0">; height:</span><span class="s3">5</span><span class="s2">px</span><span class="s0">} 
+            .</span><span class="s1">carousel-indicators </span><span class="s0">.</span><span class="s1">active</span><span class="s0">{width:</span><span class="s3">6</span><span class="s2">px</span><span class="s0">; height:</span><span class="s3">6</span><span class="s2">px</span><span class="s0">} 
+            .</span><span class="s1">carousel-indicators</span><span class="s0">{ bottom:</span><span class="s3">0</span><span class="s0">} 
+ 
+        } 
+        </span><span class="s1">@media </span><span class="s2">screen </span><span class="s1">and </span><span class="s0">(min-width:</span><span class="s3">760</span><span class="s2">px</span><span class="s0">) </span><span class="s1">and </span><span class="s0">(max-width:</span><span class="s3">1200</span><span class="s2">px</span><span class="s0">){ 
+            .</span><span class="s1">item active img</span><span class="s0">{ width:</span><span class="s3">95</span><span class="s0">%; height:</span><span class="s3">95</span><span class="s0">%} 
+            </span><span class="s1">#myCarousel</span><span class="s0">{width:</span><span class="s3">95</span><span class="s0">%; height:</span><span class="s3">95</span><span class="s0">%} 
+            .</span><span class="s1">wrap</span><span class="s0">{width:</span><span class="s3">95</span><span class="s0">%; height:</span><span class="s3">95</span><span class="s0">%} 
+            .</span><span class="s1">carousel-indicators li</span><span class="s0">{ width:</span><span class="s3">5</span><span class="s2">px</span><span class="s0">; height:</span><span class="s3">5</span><span class="s2">px</span><span class="s0">} 
+            .</span><span class="s1">carousel-indicators </span><span class="s0">.</span><span class="s1">active</span><span class="s0">{width:</span><span class="s3">6</span><span class="s2">px</span><span class="s0">; height:</span><span class="s3">6</span><span class="s2">px</span><span class="s0">} 
+            .</span><span class="s1">carousel-indicators</span><span class="s0">{ bottom:</span><span class="s3">0</span><span class="s0">} 
+            .</span><span class="s1">nav</span><span class="s0">{ display:</span><span class="s2">none</span><span class="s0">} 
+        } 
+        </span><span class="s1">@media </span><span class="s2">screen </span><span class="s1">and </span><span class="s0">(min-width:</span><span class="s3">1600</span><span class="s2">px</span><span class="s0">){ 
+            .</span><span class="s1">container-fluid</span><span class="s0">{ width:</span><span class="s3">1600</span><span class="s2">px</span><span class="s0">;} 
+ 
+        } 
+        </span><span class="s1">@media </span><span class="s2">screen </span><span class="s1">and </span><span class="s0">(min-width:</span><span class="s3">2732</span><span class="s2">px</span><span class="s0">){ 
+            .</span><span class="s1">container-fluid</span><span class="s0">{ width:</span><span class="s3">2000</span><span class="s2">px</span><span class="s0">;} 
+        } 
+    &lt;/</span><span class="s1">style</span><span class="s0">&gt; 
+&lt;/</span><span class="s1">head</span><span class="s0">&gt; 
+ 
+&lt;</span><span class="s1">body </span><span class="s0">&gt; 
+ 
+&lt;</span><span class="s1">nav </span><span class="s0">class=</span><span class="s2">&quot;navbar navbar-inverse&quot;</span><span class="s0">&gt; </span><span class="s4">&lt;!-- navbar-default --&gt;</span><span class="s0"> 
+    &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;container-fluid&quot;</span><span class="s0">&gt; 
+        </span><span class="s4">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span><span class="s0"> 
+        &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;navbar-header&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">button </span><span class="s0">type=</span><span class="s2">&quot;button&quot; </span><span class="s0">class=</span><span class="s2">&quot;navbar-toggle collapsed&quot; </span><span class="s0">data-toggle=</span><span class="s2">&quot;collapse&quot; </span><span class="s0">data-target=</span><span class="s2">&quot;#bs-example-navbar-collapse-1&quot; </span><span class="s0">aria-expanded=</span><span class="s2">&quot;false&quot;</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;sr-only&quot;</span><span class="s0">&gt;Toggle navigation&lt;/</span><span class="s1">span</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;icon-bar&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">span</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;icon-bar&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">span</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;icon-bar&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">span</span><span class="s0">&gt; 
+            &lt;/</span><span class="s1">button</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">a </span><span class="s0">class=</span><span class="s2">&quot;navbar-brand &quot; </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;Comic hostel&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+ 
+        </span><span class="s4">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span><span class="s0"> 
+        &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;collapse navbar-collapse&quot; </span><span class="s0">id=</span><span class="s2">&quot;bs-example-navbar-collapse-1&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">ul </span><span class="s0">class=</span><span class="s2">&quot;nav navbar-nav&quot;</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">li </span><span class="s0">class=</span><span class="s2">&quot;dropdown&quot;</span><span class="s0">&gt; 
+                    &lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot; </span><span class="s0">class=</span><span class="s2">&quot;dropdown-toggle&quot; </span><span class="s0">data-toggle=</span><span class="s2">&quot;dropdown&quot; </span><span class="s0">role=</span><span class="s2">&quot;button&quot; </span><span class="s0">aria-haspopup=</span><span class="s2">&quot;true&quot; </span><span class="s0">aria-expanded=</span><span class="s2">&quot;false&quot;</span><span class="s0">&gt;menu&lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;caret&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">span</span><span class="s0">&gt;&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+                    &lt;</span><span class="s1">ul </span><span class="s0">class=</span><span class="s2">&quot;dropdown-menu&quot;</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;Domestic animation&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li </span><span class="s0">role=</span><span class="s2">&quot;separator&quot; </span><span class="s0">class=</span><span class="s2">&quot;divider&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;American animation&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li </span><span class="s0">role=</span><span class="s2">&quot;separator&quot; </span><span class="s0">class=</span><span class="s2">&quot;divider&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;Japanese animation&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li </span><span class="s0">role=</span><span class="s2">&quot;separator&quot; </span><span class="s0">class=</span><span class="s2">&quot;divider&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;French Animation&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                    &lt;/</span><span class="s1">ul</span><span class="s0">&gt; 
+                &lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+            &lt;/</span><span class="s1">ul</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">form </span><span class="s0">class=</span><span class="s2">&quot;navbar-form navbar-left&quot;</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;form-group&quot;</span><span class="s0">&gt; 
+                    &lt;</span><span class="s1">input </span><span class="s0">type=</span><span class="s2">&quot;text&quot; </span><span class="s0">class=</span><span class="s2">&quot;form-control&quot; </span><span class="s0">placeholder=</span><span class="s2">&quot;Search&quot;</span><span class="s0">&gt; 
+                &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">button </span><span class="s0">type=</span><span class="s2">&quot;submit&quot; </span><span class="s0">class=</span><span class="s2">&quot;btn btn-default&quot;</span><span class="s0">&gt;Submit&lt;/</span><span class="s1">button</span><span class="s0">&gt; 
+            &lt;/</span><span class="s1">form</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">ul </span><span class="s0">class=</span><span class="s2">&quot;nav navbar-nav navbar-right&quot;</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;sign in&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">li </span><span class="s0">class=</span><span class="s2">&quot;dropdown&quot;</span><span class="s0">&gt; 
+                    &lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot; </span><span class="s0">class=</span><span class="s2">&quot;dropdown-toggle&quot; </span><span class="s0">data-toggle=</span><span class="s2">&quot;dropdown&quot; </span><span class="s0">role=</span><span class="s2">&quot;button&quot; </span><span class="s0">aria-haspopup=</span><span class="s2">&quot;true&quot; </span><span class="s0">aria-expanded=</span><span class="s2">&quot;false&quot;</span><span class="s0">&gt;language &lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;caret&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">span</span><span class="s0">&gt;&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+                    &lt;</span><span class="s1">ul </span><span class="s0">class=</span><span class="s2">&quot;dropdown-menu&quot;</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;Chinese&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;English&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;Japanese&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;French&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li </span><span class="s0">role=</span><span class="s2">&quot;separator&quot; </span><span class="s0">class=</span><span class="s2">&quot;divider&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                    &lt;/</span><span class="s1">ul</span><span class="s0">&gt; 
+                &lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+            &lt;/</span><span class="s1">ul</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">div</span><span class="s0">&gt;</span><span class="s4">&lt;!-- /.navbar-collapse --&gt;</span><span class="s0"> 
+    &lt;/</span><span class="s1">div</span><span class="s0">&gt;</span><span class="s4">&lt;!-- /.container-fluid --&gt;</span><span class="s0"> 
+&lt;/</span><span class="s1">nav</span><span class="s0">&gt; 
+ 
+</span><span class="s4">&lt;!----------------------------------------------------------------navbar-end--------------------------------------------------------------------------------&gt;</span><span class="s0"> 
+ 
+&lt;</span><span class="s1">div </span><span class="s0">id=</span><span class="s2">&quot;myCarousel&quot; </span><span class="s0">class=</span><span class="s2">&quot;carousel slide &quot; </span><span class="s0">data-ride=</span><span class="s2">&quot;carousel&quot;</span><span class="s0">&gt; 
+    </span><span class="s4">&lt;!-- 轮播（Carousel）指标 --&gt;</span><span class="s0"> 
+    &lt;</span><span class="s1">ol </span><span class="s0">class=</span><span class="s2">&quot;carousel-indicators&quot;</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">li </span><span class="s0">data-target=</span><span class="s2">&quot;#myCarousel&quot; </span><span class="s0">data-slide-to=</span><span class="s2">&quot;0&quot; </span><span class="s0">class=</span><span class="s2">&quot;active&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">li </span><span class="s0">data-target=</span><span class="s2">&quot;#myCarousel&quot; </span><span class="s0">data-slide-to=</span><span class="s2">&quot;1&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">li </span><span class="s0">data-target=</span><span class="s2">&quot;#myCarousel&quot; </span><span class="s0">data-slide-to=</span><span class="s2">&quot;2&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">li </span><span class="s0">data-target=</span><span class="s2">&quot;#myCarousel&quot; </span><span class="s0">data-slide-to=</span><span class="s2">&quot;3&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+    &lt;/</span><span class="s1">ol</span><span class="s0">&gt; 
+    </span><span class="s4">&lt;!-- 轮播（Carousel）项目 --&gt;</span><span class="s0"> 
+    &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;carousel-inner&quot;</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;item active&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">img </span><span class="s0">src=</span><span class="s2">&quot;../img/e-imgs/1366_360/1.jpg&quot; </span><span class="s0">alt=</span><span class="s2">&quot;First slide&quot;</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;item&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">img </span><span class="s0">src=</span><span class="s2">&quot;../img/e-imgs/1366_360/2.jpg&quot; </span><span class="s0">alt=</span><span class="s2">&quot;Second slide&quot;</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;item&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">img </span><span class="s0">src=</span><span class="s2">&quot;../img/e-imgs/1366_360/3.jpg&quot; </span><span class="s0">alt=</span><span class="s2">&quot;Third slide&quot;</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">div </span><span class="s0">class=</span><span class="s2">&quot;item&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">img </span><span class="s0">src=</span><span class="s2">&quot;../img/e-imgs/1366_360/4.jpg&quot; </span><span class="s0">alt=</span><span class="s2">&quot;Third slide&quot;</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+    &lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+    </span><span class="s4">&lt;!-- 轮播（Carousel）导航 --&gt;</span><span class="s0"> 
+    &lt;</span><span class="s1">a </span><span class="s0">class=</span><span class="s2">&quot;carousel-control left&quot; </span><span class="s0">href=</span><span class="s2">&quot;#myCarousel&quot;</span><span class="s0"> 
+       data-slide=</span><span class="s2">&quot;prev&quot;</span><span class="s0">&gt;</span><span class="s5">&amp;lsaquo;</span><span class="s0">&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">a </span><span class="s0">class=</span><span class="s2">&quot;carousel-control right&quot; </span><span class="s0">href=</span><span class="s2">&quot;#myCarousel&quot;</span><span class="s0"> 
+       data-slide=</span><span class="s2">&quot;next&quot;</span><span class="s0">&gt;</span><span class="s5">&amp;rsaquo;</span><span class="s0">&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+&lt;/</span><span class="s1">div</span><span class="s0">&gt;</span><span class="s4">&lt;!-- 轮播end --&gt;</span><span class="s0"> 
+ 
+ 
+</span><span class="s4">&lt;!-- &lt;div style=&quot;min-height: 100px ; width:1366px;  margin:10px auto&quot;&gt; --&gt;</span><span class="s0"> 
+ 
+&lt;</span><span class="s1">nav </span><span class="s0">id=</span><span class="s2">&quot;nav1&quot; </span><span class="s0">class=</span><span class="s2">&quot;navbar navbar-default&quot; </span><span class="s0">style=</span><span class="s2">&quot;  </span><span class="s0">margin:</span><span class="s3">10</span><span class="s2">px auto</span><span class="s0">; width: </span><span class="s3">1366</span><span class="s2">px</span><span class="s0">;</span><span class="s2">&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot; </span><span class="s0">class=</span><span class="s2">&quot;navbar-brand&quot;</span><span class="s0">&gt;Comic hostel&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">ul </span><span class="s0">class=</span><span class="s2">&quot;nav navbar-nav&quot;</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#hyrz&quot;</span><span class="s0">&gt;火影忍者&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+        &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#hzw&quot;</span><span class="s0">&gt;海贼王&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+ 
+        &lt;</span><span class="s1">li </span><span class="s0">class=</span><span class="s2">&quot;dropdown&quot;</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#&quot; </span><span class="s0">data-toggle=</span><span class="s2">&quot;dropdown&quot;</span><span class="s0">&gt;不羁女恋&lt;</span><span class="s1">span </span><span class="s0">class=</span><span class="s2">&quot;caret&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">span</span><span class="s0">&gt;&lt;/</span><span class="s1">a</span><span class="s0">&gt; 
+            &lt;</span><span class="s1">ul </span><span class="s0">class=</span><span class="s2">&quot;dropdown-menu&quot;</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#yy&quot;</span><span class="s0">&gt;原夜&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#sxc&quot;</span><span class="s0">&gt;司小川&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+                &lt;</span><span class="s1">li</span><span class="s0">&gt;&lt;</span><span class="s1">a </span><span class="s0">href=</span><span class="s2">&quot;#abqs&quot;</span><span class="s0">&gt;岸本情史&lt;/</span><span class="s1">a</span><span class="s0">&gt;&lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+            &lt;/</span><span class="s1">ul</span><span class="s0">&gt; 
+        &lt;/</span><span class="s1">li</span><span class="s0">&gt; 
+ 
+    &lt;/</span><span class="s1">ul</span><span class="s0">&gt; 
+&lt;/</span><span class="s1">nav</span><span class="s0">&gt; 
+&lt;</span><span class="s1">div </span><span class="s0">data-spy=</span><span class="s2">&quot;scroll&quot; </span><span class="s0">data-target=</span><span class="s2">&quot;#nav1&quot; </span><span class="s0">data-offset=</span><span class="s2">&quot;10&quot; </span><span class="s0">style=</span><span class="s2">&quot;</span><span class="s0">padding: </span><span class="s3">10</span><span class="s2">px </span><span class="s3">10</span><span class="s2">px</span><span class="s0">;width: </span><span class="s3">1366</span><span class="s2">px</span><span class="s0">; height: </span><span class="s3">200</span><span class="s2">px</span><span class="s0">; overflow: </span><span class="s2">auto</span><span class="s0">; position: </span><span class="s2">relative</span><span class="s0">; margin: </span><span class="s3">0 </span><span class="s2">auto</span><span class="s0">;  </span><span class="s2">&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">h4 </span><span class="s0">id=</span><span class="s2">&quot;dmyz&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;Comic hostel(动漫驿站)&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">h4</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">p </span><span class="s0">class=</span><span class="s2">&quot;text-width&quot;</span><span class="s0">&gt; 
+        动漫驿站是2004年01月01日至2004年12月31日在教育电视台一套播出（cetv-1)的超级动漫栏目。这个节目专职介绍海内外的各种经典人气动漫作品，诸如EVA，高达，圣斗士等等。节目由漂亮的小菲姐姐主持，其小菲论剑等栏目深受广大动漫爱好者的喜爱，给那个年代的年轻人心中留下了深刻的印象，影响深远。即使到现在，这个节目已经停播了很久，有很多有幸看过节目的爱好者们依然不断的去怀念她，怀念心中的动漫驿站，怀念心中美好的童年时光。 
+    &lt;/</span><span class="s1">p</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">h4 </span><span class="s0">id=</span><span class="s2">&quot;hyrz&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;火影忍者&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">h4</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">p </span><span class="s0">class=</span><span class="s2">&quot;text-width&quot;</span><span class="s0">&gt; 
+        作品设定在一个忍者的世界，故事从主人公漩涡鸣人的孤儿生活开始，他的父母为了保护村子，将攻击村子九尾妖狐封印到了他体内，鸣人因此受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有依鲁卡老师的关心，鸣人的性格才没有变得扭曲，他总是干劲十足、非常乐观。&lt;</span><span class="s1">br</span><span class="s0">&gt; 
+        为了让更多的人认可自己，鸣人的目标是成为火影。整个故事就围绕鸣人的奋斗、成长，鸣人的同伴们的故事，以及这个忍者世界的各种争斗和阴谋展开。 
+ 
+    &lt;/</span><span class="s1">p</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">h4 </span><span class="s0">id=</span><span class="s2">&quot;hzw&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;海贼王&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">h4</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">p </span><span class="s0">class=</span><span class="s2">&quot;text-width&quot;</span><span class="s0">&gt; 
+        拥有财富、名声、权力，这世界上的一切的男人 “海贼王”哥尔·D·罗杰，在被行刑受死之前说了一句话，让全世界的人都涌向了大海。“想要我的宝藏吗？如果想要的话，那就到海上去找吧，我全部都放在那里。”，世界开始迎接“大海贼时代”的来临。 
+    &lt;/</span><span class="s1">p</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">h4 </span><span class="s0">id=</span><span class="s2">&quot;yy&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;原夜&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">h4</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">p </span><span class="s0">class=</span><span class="s2">&quot;text-width&quot;</span><span class="s0">&gt; 
+        拥有财富、名声、权力，这世界上的一切的男人 “海贼王”哥尔·D·罗杰，在被行刑受死之前说了一句话，让全世界的人都涌向了大海。“想要我的宝藏吗？如果想要的话，那就到海上去找吧，我全部都放在那里。”，世界开始迎接“大海贼时代”的来临。 
+    &lt;/</span><span class="s1">p</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">h4 </span><span class="s0">id=</span><span class="s2">&quot;sxc&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;司小川&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">h4</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">p </span><span class="s0">class=</span><span class="s2">&quot;text-width&quot;</span><span class="s0">&gt; 
+        拥有财富、名声、权力，这世界上的一切的男人 “海贼王”哥尔·D·罗杰，在被行刑受死之前说了一句话，让全世界的人都涌向了大海。“想要我的宝藏吗？如果想要的话，那就到海上去找吧，我全部都放在那里。”，世界开始迎接“大海贼时代”的来临。 
+    &lt;/</span><span class="s1">p</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">h4 </span><span class="s0">id=</span><span class="s2">&quot;abqs&quot;</span><span class="s0">&gt;&lt;</span><span class="s1">b</span><span class="s0">&gt;岸本情史&lt;/</span><span class="s1">b</span><span class="s0">&gt;&lt;/</span><span class="s1">h4</span><span class="s0">&gt; 
+    &lt;</span><span class="s1">p </span><span class="s0">class=</span><span class="s2">&quot;text-width&quot;</span><span class="s0">&gt; 
+        拥有财富、名声、权力，这世界上的一切的男人 “海贼王”哥尔·D·罗杰，在被行刑受死之前说了一句话，让全世界的人都涌向了大海。“想要我的宝藏吗？如果想要的话，那就到海上去找吧，我全部都放在那里。”，世界开始迎接“大海贼时代”的来临。 
+    &lt;/</span><span class="s1">p</span><span class="s0">&gt; 
+&lt;/</span><span class="s1">div</span><span class="s0">&gt; 
+ 
+ 
+</span><span class="s4">&lt;!---------------------------------------------------------------------轮播结束--------------------------------------------------------------------------&gt;</span><span class="s0"> 
+&lt;</span><span class="s1">script </span><span class="s0">src=</span><span class="s2">&quot;../js/jquery-3.1.1.js&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">script</span><span class="s0">&gt; 
+&lt;</span><span class="s1">script </span><span class="s0">src=</span><span class="s2">&quot;../js/bootstrap.min.js&quot;</span><span class="s0">&gt;&lt;/</span><span class="s1">script</span><span class="s0">&gt; 
+&lt;</span><span class="s1">script </span><span class="s0">type=</span><span class="s2">&quot;text/javascript&quot;</span><span class="s0">&gt; 
+    $(</span><span class="s2">&quot;#content&quot;</span><span class="s0">).scrollspy({ 
+ 
+    }) 
+&lt;/</span><span class="s1">script</span><span class="s0">&gt; 
+&lt;/</span><span class="s1">body</span><span class="s0">&gt; 
+&lt;/</span><span class="s1">html</span><span class="s0">&gt; 
+</span></pre>
+</body>
+</html>

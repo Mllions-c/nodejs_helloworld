@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>node_2fsread.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); font-style: italic; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,128); font-weight: bold; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+node_2fsread.js</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">/** 
+ * Created by dingyl on 2017/3/10. 
+ */</span><span class="s1"> 
+</span><span class="s0">//fs操作</span><span class="s1"> 
+</span><span class="s2">var </span><span class="s1">fs = require(</span><span class="s3">'fs'</span><span class="s1">); 
+ 
+</span><span class="s0">//读取文件操作1，异步操作</span><span class="s1"> 
+</span><span class="s0">//fs.readFile('sum.js','utf-8', function(err, data){//不写utf-8,可以在下面加</span><span class="s1"> 
+</span><span class="s0">//    if(err) {</span><span class="s1"> 
+</span><span class="s0">//        console.error(err);</span><span class="s1"> 
+</span><span class="s0">//    }</span><span class="s1"> 
+</span><span class="s0">//    else{</span><span class="s1"> 
+</span><span class="s0">//        console.log(data);//如果不toString(),会输出16进制</span><span class="s1"> 
+</span><span class="s0">//    }</span><span class="s1"> 
+</span><span class="s0">//})</span><span class="s1"> 
+ 
+</span><span class="s0">//读取文件操作2：同步</span><span class="s1"> 
+</span><span class="s0">//try {//不能用try catch补获异步错误</span><span class="s1"> 
+</span><span class="s0">//    var data = fs.readFileSync('sum2.js', 'utf-8');//同步不需要回调函数</span><span class="s1"> 
+</span><span class="s0">//    console.log(data);</span><span class="s1"> 
+</span><span class="s0">//}catch(err){</span><span class="s1"> 
+</span><span class="s0">//console.error(err);}</span><span class="s1"> 
+ 
+</span><span class="s0">//异步读取多个文件</span><span class="s1"> 
+</span><span class="s0">//var obj = {};</span><span class="s1"> 
+</span><span class="s0">//function show(){</span><span class="s1"> 
+</span><span class="s0">//    if(Object.keys(obj).length==2){</span><span class="s1"> 
+</span><span class="s0">//        console.log(obj);</span><span class="s1"> 
+</span><span class="s0">//    }</span><span class="s1"> 
+</span><span class="s0">//}</span><span class="s1"> 
+</span><span class="s0">//</span><span class="s1"> 
+</span><span class="s0">//fs.readFile('test1.txt', 'utf-8',function(err,name){</span><span class="s1"> 
+</span><span class="s0">//    obj.name = name;</span><span class="s1"> 
+</span><span class="s0">//    show();</span><span class="s1"> 
+</span><span class="s0">//});</span><span class="s1"> 
+</span><span class="s0">//fs.readFile('test2.txt', 'utf-8',function(err,age){</span><span class="s1"> 
+</span><span class="s0">//    obj.age = age;</span><span class="s1"> 
+</span><span class="s0">//    show();</span><span class="s1"> 
+</span><span class="s0">//});</span><span class="s1"> 
+</span></pre>
+</body>
+</html>

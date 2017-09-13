@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>node_5处理url.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); font-style: italic; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,128); font-weight: bold; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+node_5处理url.js</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">/** 
+ * Created by dingyl on 2017/3/10. 
+ */</span><span class="s1"> 
+</span><span class="s2">var </span><span class="s1">http =require(</span><span class="s3">'http'</span><span class="s1">); 
+</span><span class="s2">var </span><span class="s1">url = require(</span><span class="s3">'url'</span><span class="s1">); 
+</span><span class="s2">var </span><span class="s1">fs = require(</span><span class="s3">'fs'</span><span class="s1">); 
+ 
+    http.createServer(</span><span class="s2">function</span><span class="s1">(request, response){ 
+    </span><span class="s2">var </span><span class="s1">urlObj = url.parse(request.url);</span><span class="s0">//用parse解析返回的综合url信息，为数组格式</span><span class="s1"> 
+ 
+    </span><span class="s2">var </span><span class="s1">pathname = urlObj.pathname;</span><span class="s0">//获取到pathname</span><span class="s1"> 
+ 
+    </span><span class="s2">if </span><span class="s1">(pathname == </span><span class="s3">'/'</span><span class="s1">){</span><span class="s0">//如果用户只输入/的情况，也就是定义默认首页</span><span class="s1"> 
+        fs.readFile(</span><span class="s3">'index.html'</span><span class="s1">, </span><span class="s3">'utf-8'</span><span class="s1">, </span><span class="s2">function</span><span class="s1">(err, data){ 
+            response.end(data); 
+        }) 
+    } 
+    </span><span class="s2">else if</span><span class="s1">(pathname === </span><span class="s3">'/ajax'</span><span class="s1">){</span><span class="s0">//定义特殊情况</span><span class="s1"> 
+        response.end (</span><span class="s3">'{&quot;SB&quot;:&quot;this is a json&quot;}'</span><span class="s1">); 
+    } 
+    </span><span class="s2">else </span><span class="s1">{</span><span class="s0">//普通情况</span><span class="s1"> 
+        readFileAndResponse (pathname, response); 
+    } 
+ 
+}).listen(</span><span class="s4">8888</span><span class="s1">); 
+</span><span class="s2">function </span><span class="s1">readFileAndResponse (pathname, response) { 
+    fs.readFile(</span><span class="s3">'..'</span><span class="s1">+pathname, </span><span class="s3">'utf-8'</span><span class="s1">, </span><span class="s2">function</span><span class="s1">(err, data){</span><span class="s0">//substr(1),从第一个字符开始取，也就是去掉了/，如果是相对路径就不需要了。</span><span class="s1"> 
+ 
+        </span><span class="s2">if </span><span class="s1">(err) {</span><span class="s0">//定义错误情况</span><span class="s1"> 
+            response.writeHead(</span><span class="s4">404</span><span class="s1">);</span><span class="s0">//写入请求头</span><span class="s1"> 
+            response.end (</span><span class="s3">'&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;margin: 0 auto; width: 1000px;color: red; text-align: center&quot;&gt;&lt;h1&gt;' </span><span class="s1">+ 
+                </span><span class="s3">' 傻蛋蛋，没有这个网址，好好看看&lt;/h1&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;'</span><span class="s1">); 
+        } 
+        </span><span class="s2">else</span><span class="s1">{</span><span class="s0">//正常情况</span><span class="s1"> 
+        response.end(data);</span><span class="s0">//读取文件夹并返回</span><span class="s1"> 
+        } 
+    }) 
+} 
+</span></pre>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>node_1global</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+node_1global</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">//console.log(global) //查看全局属性 
+//console.log(__dirname)//当前文件绝对路径 
+//console.log(__filename)//当前文件绝对路径加文件名 
+ 
+//console.log('this is log');//可用‘文件名 &gt;log.txt’重定向或‘文件名 1&gt;log.txt’ 
+//console.error('this is err');//可用‘文件名 2&gt;err.txt’重定向 
+//console.info('this is info');//可用‘文件名 &gt;log.txt’重定向或‘文件名 1&gt;log.txt’ 
+//console.warn('this is warn');//可用‘文件名 2&gt;err.txt’重定向 
+ 
+//console.time('test');//计算代码执行时间，放在中间 
+//for(var i = 0; i&lt;1000000000; i++){}; 
+//console.timeEnd('test'); 
+ 
+//输出 
+//process.stdout -&gt;standard output 
+//process.stdout.write('this is stdout'); 
+//process.stderr -&gt;standard error 
+//process.stderr.write('this is stderr'); 
+ 
+//读取输入 
+//process.stdin.setEncoding('utf-8');//先设置编码，纯文本为utf-8 
+//process.stdin.on('data',function(data){//启动监听，回调函数 
+//   console.log(data) ;//将用户的输入打印 
+//}); 
+ 
+//读取输入2 
+//process.stdin.setEncoding('utf-8'); 
+//process.stdin.on('readable',function(){ 
+//    var data = process.stdin.read(); 
+// console.log(data) ;}); 
+ 
+//console.log(process.cwd());//文件执行目录 
+ 
+//process.on('exit', function(){ 
+//    console.log('this is a exit');//程序正常结束时触发 
+//}) 
+ 
+//process.on('SIGINT', function(){ 
+//    console.log('this is a sight');//程序打断时被触发 
+   // process.exit(); 
+//}) 
+ 
+//var sum = require('./sum.js'); 
+//console.log(sum.sum (10)); 
+ 
+//console.log(process.argv);//输出数组，第一项和最后一项时node路径和本文件路径，中间包括输入所有的内容 
+ 
+</span></pre>
+</body>
+</html>
